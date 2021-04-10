@@ -13,8 +13,11 @@
     "mysql2": "^2.1.0",
     "sequelize": "^6.3.4"
   },
+  "engines": {
+    "node": "12.13.x"
+  },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "14.8.0"
   },
   "scripts": {
     "dev": "nodemon server.js",
