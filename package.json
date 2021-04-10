@@ -14,10 +14,10 @@
     "sequelize": "^6.3.4"
   },
   "engines": {
-    "node": "12.13.x"
-  },
+  "node": "14.8.0"
+},
   "devDependencies": {
-    "nodemon": "14.8.0"
+    "nodemon": "^2.0.4"
   },
   "scripts": {
     "dev": "nodemon server.js",
