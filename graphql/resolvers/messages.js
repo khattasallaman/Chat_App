@@ -118,18 +118,18 @@ module.exports = {
         throw err
       }
     },
-    uploadFile: async (parent, {file}) => {
-     const {createReadStream, filename, mimetype,
-      encoding} = await file
-      const stream = createReadStream()
-      const pathName = `G:/React js projects/hatim/node-graphql-react-chat-app/public/images/${filename}`
-      await stream.pipe(fs.createWriteStream(pathName))
+    // uploadFile: async (parent, {file}) => {
+    //  const {createReadStream, filename, mimetype,
+    //   encoding} = await file
+    //   const stream = createReadStream()
+    //   const pathName = `G:/React js projects/hatim/node-graphql-react-chat-app/public/images/${filename}`
+    //   await stream.pipe(fs.createWriteStream(pathName))
 
-      return {
-        url:`http://localhost/4000/`
-      }
+    //   return {
+    //     url:`http://localhost/4000/`
+    //   }
 
-    },
+    // },
   },
   Subscription: {
     newMessage: {

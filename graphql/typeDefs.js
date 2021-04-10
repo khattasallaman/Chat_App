@@ -33,7 +33,6 @@ module.exports = gql`
     getUsers: [User]!
     login(username: String!, password: String!): User!
     getMessages(from: String!): [Message]!
-    uploads:[File]
   }
   type Mutation {
     register(
@@ -44,7 +43,6 @@ module.exports = gql`
     ): User!
     sendMessage(to: String!, content: String!): Message!
     reactToMessage(uuid: String!, content: String!): Reaction!
-    uploadFile(file:Upload!):File!
   }
   type Subscription {
     newMessage: Message!
